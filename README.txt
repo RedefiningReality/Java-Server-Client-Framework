@@ -36,14 +36,8 @@ The Data Structures and Algorithms concepts utilised in the various frameworks:
 	7. Multithreading => used by the server to connect to multiple clients
 
 Bugs and future releases:
-	1. The standard Input-Output tools are used for Client-Server communication, and therefore require multithreading in 
-	order to connect one server to multiple clients. Therefore, this framework should not be used on servers which require 
-	a large amount of simultaneous client connections. This can be fixed by modifying the server and client frameworks to 
-	use the Java New Input-Output packages (SocketChannel rather than Socket). Two classes have already been created for 
-	easy reading and writing to and from socket channels. These classes are currently located in cscdata and are not being 
-	used.
-	2. The server fails to disconnect properly from the client after the completion of all transfers. It only disconnects 
-	after the user of the client closes the application. This does not pose a problem in any sense, but can be quite a nuisance.
+	1. The standard Input-Output tools are used for Client-Server communication, and therefore require multithreading in order to connect one server to multiple clients. Therefore, this framework should not be used on servers which require a large amount of simultaneous client connections. This can be fixed by modifying the server and client frameworks to use the Java New Input-Output packages (SocketChannel rather than Socket). Two classes have already been created for easy reading and writing to and from socket channels. These classes are currently located in cscdata and are not being used.
+	2. The server fails to disconnect properly from the client after the completion of all transfers. It only disconnects after the user of the client closes the application. This does not pose a problem in any sense, but can be quite a nuisance.
 	3. The graphical chat dialogue is yet to be completed.
 
 A list of a few sources used in no particular order:
@@ -56,5 +50,4 @@ A list of a few sources used in no particular order:
 	http://tutorials.jenkov.com/java-nio/nio-vs-io.html
 	Java 8 Documentation
 
-The client framework was based off of ClientGUI. The server framework was based off of ApplicationServer.
-Both of these are from projects which I was previously working on yet never completed.
+The client framework was based off of ClientGUI. The server framework was based off of ApplicationServer. Both of these are from projects which I was previously working on yet never completed.
