@@ -6,6 +6,14 @@ import framework.logging.Logger;
 import framework.logging.MessageLevels;
 import framework.transfer.Transfer;
 
-public class ExampleTransfer {
-	
+public class ExampleTransfer extends Transfer {
+
+	@Override
+	public void start(BufferedReader in, PrintWriter out) throws IOException {
+		String word = in.readLine();
+		
+		Logger logger = new Logger("ExampleTransfer");
+		logger.printMessage("Word: " + word, MessageLevels.HIGHEST_PRIORITY);
+	}
+
 }
