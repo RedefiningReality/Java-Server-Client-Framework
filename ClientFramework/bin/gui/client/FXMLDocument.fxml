@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.client.FXMLDocumentController">
+   <children>
+      <Text layoutX="40.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Transfers">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="204.0" layoutY="355.0" mnemonicParsing="false" onAction="#retrieveHostName" text="Change Host Name" />
+      <Button layoutX="200.0" layoutY="386.0" mnemonicParsing="false" onAction="#retrievePortNumber" text="Change Port Number" />
+      <ScrollPane layoutY="48.0" prefHeight="452.0" prefWidth="175.0">
+         <content>
+            <VBox fx:id="transfersVBox" prefHeight="450.0" prefWidth="173.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="218.0" layoutY="430.0" mnemonicParsing="false" onAction="#connect" text="Connect">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="212.0" layoutY="313.0" mnemonicParsing="false" onAction="#removeTransferFromSelected" text="Remove Transfer" />
+      <Text layoutX="190.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Transfers">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="175.0" layoutY="48.0" prefHeight="249.0" prefWidth="175.0">
+         <content>
+            <Text fx:id="selectedTransfers" strokeType="OUTSIDE" strokeWidth="0.0" text="None">
+               <font>
+                  <Font name="Times New Roman" size="12.0" />
+               </font>
+            </Text>
+         </content>
+      </ScrollPane>
+      <Text layoutX="193.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(execute selected transfers)" />
+   </children>
+</AnchorPane>
