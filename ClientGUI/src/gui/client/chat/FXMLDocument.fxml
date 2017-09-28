@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="230.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.client.chat.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="230.0" prefWidth="350.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Chat">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="161.0" prefWidth="350.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="335.0">
+                                 <children>
+                                    <Text fx:id="chatText" layoutX="14.0" layoutY="-25.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                        <TextField fx:id="chatTextField" layoutX="10.0" layoutY="168.0" prefHeight="25.0" prefWidth="330.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Connection Info">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="201.0" prefWidth="350.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0">
+                                 <children>
+                                    <Text fx:id="connectionInfo" fill="BLUE" fontSmoothingType="LCD" layoutX="17.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obtaining Connection Info..." wrappingWidth="473.830078125">
+                                       <font>
+                                          <Font name="Courier New" size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

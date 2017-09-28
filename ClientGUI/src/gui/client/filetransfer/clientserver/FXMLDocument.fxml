@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.client.filetransfer.clientserver.FXMLDocumentController">
+   <children>
+      <TabPane prefHeight="300.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="File Transfer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="205.0" prefWidth="256.0">
+                     <children>
+                        <ProgressBar fx:id="progressBar" layoutX="50.0" layoutY="123.0" prefHeight="25.0" prefWidth="300.0" progress="0.0" />
+                        <Text layoutX="50.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sending File to Server..." />
+                        <Button cancelButton="true" layoutX="255.0" layoutY="220.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+                        <Button fx:id="finishButton" disable="true" layoutX="325.0" layoutY="220.0" mnemonicParsing="false" text="Finish" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Connection Info">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="271.0" prefWidth="400.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0">
+                                 <children>
+                                    <Text fx:id="connectionInfo" fill="BLUE" fontSmoothingType="LCD" layoutX="14.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obtaining Connection Info...">
+                                       <font>
+                                          <Font name="Courier New" size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

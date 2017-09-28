@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.client.main.FXMLDocumentController">
+   <children>
+      <Button layoutX="40.0" layoutY="77.0" mnemonicParsing="false" onAction="#fileTransferCS" text="Send File" />
+      <Button layoutX="15.0" layoutY="151.0" mnemonicParsing="false" onAction="#multipleFileTransferCS" text="Send Multiple Files" />
+      <Button layoutX="91.0" layoutY="14.0" mnemonicParsing="false" onAction="#chat" text="Connect to Chat Server" />
+      <Button layoutX="203.0" layoutY="77.0" mnemonicParsing="false" onAction="#fileTransferSC" text="Receive File" />
+      <Button layoutX="177.0" layoutY="151.0" mnemonicParsing="false" onAction="#multipleFileTransferSC" text="Receive Multiple Files" />
+      <Button layoutX="15.0" layoutY="253.0" mnemonicParsing="false" onAction="#retrieveHostName" text="Change Host Name" />
+      <Button layoutX="178.0" layoutY="253.0" mnemonicParsing="false" onAction="#retrievePortNumber" text="Change Port Number" />
+   </children>
+</AnchorPane>
