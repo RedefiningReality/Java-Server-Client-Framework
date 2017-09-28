@@ -1,4 +1,4 @@
-This is a framework collection created by John Ford.
+This is a framework collection created by John Ford. See the source code within the ServerExample for example usage.
 It consists of the following:
 	1. A Graphical User Interface framework built off of JavaFX.
 	2. A set of standard libraries for logging information to a log file as well as reading from a properties file
