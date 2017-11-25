@@ -1,6 +1,6 @@
 This is a framework collection created by John Ford. See the source code within the ServerExample and ClientExample for example usage.
 It consists of the following:
-	1. A Graphical User Interface framework built off of JavaFX.
+	1. A Graphical User Interface framework built off of JavaFX
 	2. A set of standard libraries for logging information to a log file as well as reading from a properties file
 	3. A Server-Client framework built off of the standard Java Input-Output tools
 All frameworks within the collection are compatable and designed to be used in conjunction with one another.
