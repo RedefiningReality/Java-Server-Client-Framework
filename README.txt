@@ -11,20 +11,20 @@ Libraries within the framework:
 		- reading from and writing to a properties file
 	2. Graphical User Interface Templates (guit)
 		- creating graphical dialogs with ease
-		requires: slibs
+		dependencies: slibs
 	3. Common Server-Client Data (cscdata)
 		- storage of transfers
 		- unused classes for easy reading from and writing to channels
-		requires: slibs, guit
+		dependencies: slibs, guit
 	4. Server Framework (srvrfw)
 		- server side of server-client connections
 		- properties file information storage (if desired)
-		requires: slibs, cscdata
+		dependencies: slibs, cscdata
 	5. Client Framework (clntfw)
 		- client side of server-client connections
 		- pre-created graphical user interface (if desired)
 		- properties file information storage (if desired)
-		requires: slibs, cscdata, guit
+		dependencies: slibs, cscdata, guit
 
 The Data Structures and Algorithms concepts utilised in the various frameworks:
 	1. Stack => used by the client for transfer selection
