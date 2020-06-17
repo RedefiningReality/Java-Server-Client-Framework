@@ -9,6 +9,7 @@ Libraries within the framework:
 	1. Standard Libraries (slibs)
 		- logging to a log file
 		- reading from and writing to a properties file
+		- reading from and writing to a csv file
 	2. Graphical User Interface Templates (guit)
 		- creating graphical dialogs with ease
 		dependencies: slibs
@@ -40,6 +41,8 @@ Bugs and future releases:
 	2. The server fails to disconnect properly from the client after the completion of all transfers. It only disconnects after the user of the client closes the application. This does not pose a problem in any sense, but can be quite a nuisance.
 	3. The graphical chat dialogue is yet to be completed.
 	4. The documentation is yet to be completed.
+	5. The CSV features in slibs has not yet been fully tested.
+Methods in CSVFile that already passed testing are as follows: addRow(row), addRow(row, position), getRow(label), getRow(position), addColumn(col), addColumn(col, position), getColumn(label), getColumn(position)
 
 A list of a few sources used in no particular order:
 	https://www.tutorialspoint.com/java/java_stack_class.htm
