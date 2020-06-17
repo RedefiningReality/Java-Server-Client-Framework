@@ -106,7 +106,6 @@ public class ClientFramework {
 
 	public ClientFramework(String hostName, int PORT, boolean verbose, int messageLevel) throws IOException {
 		logger = new Logger("ClientFramework", verbose, messageLevel);
-		System.out.println(PORT + "captain");
 		logger.printMessage("Connecting to server on port '" + PORT + "'...", HIGHEST_PRIORITY);
 		this.inetAddress = InetAddress.getByName(hostName);
 		this.socket = new Socket(inetAddress, PORT);
