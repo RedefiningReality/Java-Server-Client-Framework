@@ -24,10 +24,10 @@ public class Logger {
 	/* Create variables that control message logging */
 
 	// Creates a new boolean for controlling the printing of console messages
-	private static boolean verbose;
+	private static boolean verbose = true;
 	// Creates a new integer for specifying the level of messages printed to the
 	// console
-	private static int messageLevel;
+	private static int messageLevel = ERROR;
 	// Creates a new string which contains the name of the class logging the
 	// message
 	private String className;
