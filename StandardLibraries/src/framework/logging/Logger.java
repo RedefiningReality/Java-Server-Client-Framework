@@ -1,4 +1,3 @@
-
 /** 
  * Logger class for logging messages. 
  *
@@ -6,7 +5,7 @@
  * @since 3.0
  */
 
-package framework.logging;
+package ss.utils;
 
 import static framework.logging.MessageLevels.DATA;
 import static framework.logging.MessageLevels.ERROR;
@@ -25,10 +24,10 @@ public class Logger {
 	/* Create variables that control message logging */
 
 	// Creates a new boolean for controlling the printing of console messages
-	private boolean verbose;
+	private static boolean verbose;
 	// Creates a new integer for specifying the level of messages printed to the
 	// console
-	private int messageLevel;
+	private static int messageLevel;
 	// Creates a new string which contains the name of the class logging the
 	// message
 	private String className;
@@ -45,10 +44,6 @@ public class Logger {
 	 * @since 3.0
 	 */
 	public Logger() {
-		// Sets global variable verbose to true
-		this.verbose = true;
-		// Sets global variable messageLevel to ERROR
-		this.messageLevel = ERROR;
 		// Sets global variable className to a new String
 		this.className = new String();
 	}
@@ -63,47 +58,6 @@ public class Logger {
 	 * @since 3.0
 	 */
 	public Logger(String className) {
-		// Sets global variable verbose to true
-		this.verbose = true;
-		// Sets global variable messageLevel to ERROR
-		this.messageLevel = ERROR;
-		// Sets global variable className to the specified value
-		this.className = className;
-	}
-
-	/**
-	 * Creates a new logger for logging messages to the console. This constructor
-	 * sets the verbose and message level, both of which are parameters.
-	 * 
-	 * @param verbose
-	 * @param messageLevel
-	 * @since 3.0
-	 */
-	public Logger(boolean verbose, int messageLevel) {
-		// Sets global variable verbose to the specified value
-		this.verbose = verbose;
-		// Sets global variable messageLevel to the specified value
-		this.messageLevel = messageLevel;
-		// Sets global variable className to a new String
-		this.className = new String();
-	}
-
-	/**
-	 * Creates a new logger for logging messages to the console. This constructor
-	 * sets the verbose and message level, both of which are parameters.
-	 * Additionally, it accepts the parameter <code>className</code>, which sets the
-	 * name of the class logging the message.
-	 * 
-	 * @param className
-	 * @param verbose
-	 * @param messageLevel
-	 * @since 3.0
-	 */
-	public Logger(String className, boolean verbose, int messageLevel) {
-		// Sets global variable verbose to the specified value
-		this.verbose = verbose;
-		// Sets global variable messageLevel to the specified value
-		this.messageLevel = messageLevel;
 		// Sets global variable className to the specified value
 		this.className = className;
 	}
@@ -119,9 +73,9 @@ public class Logger {
 	 * @see #printMessage
 	 * @since 3.0
 	 */
-	public void setVerbose(boolean verbose) {
+	public static void setVerbose(boolean verbose) {
 		// Assigns the global boolean verbose to the verbose parameter
-		this.verbose = verbose;
+		Logger.verbose = verbose;
 	}
 
 	/**
@@ -134,7 +88,7 @@ public class Logger {
 	 * @see #printMessage
 	 * @since 3.0
 	 */
-	public boolean getVerbose() {
+	public static boolean getVerbose() {
 		// Returns the value of verbose
 		return verbose;
 	}
@@ -149,9 +103,9 @@ public class Logger {
 	 * @see #printMessage(java.lang.String, int)
 	 * @since 3.0
 	 */
-	public void setMessageLevel(int messageLevel) {
+	public static void setMessageLevel(int messageLevel) {
 		// Assigns the global integer messageLevel to the messageLevel parameter
-		this.messageLevel = messageLevel;
+		Logger.messageLevel = messageLevel;
 	}
 
 	/**
@@ -162,7 +116,7 @@ public class Logger {
 	 * @see #printMessage(java.lang.String, int)
 	 * @since 3.0
 	 */
-	public int getMessageLevel() {
+	public static int getMessageLevel() {
 		// Returns the value of messageLevel
 		return messageLevel;
 	}
